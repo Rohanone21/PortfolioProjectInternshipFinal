@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKIILS</title>
+</head>
+<style>
+.container{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: 'Times New Roman', Times, serif;
+}
+.inner{
+padding-top: 20px;
+}
+.header{
+text-align: center;
+color: #fff;
+padding:1 rem;
+transition:transform 0.5s ease-in-out
+}
+.header:after{
+    content:'';
+    position: absolute;
+    top: 50;
+    right:42%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color:blue;
+
+}
+.container{
+display:grid ;
+grid-template-columns: repeat(3,1fr);
+justify-content: center;
+align-items:center ;
+grid-gap:1rem;
+padding:1 rem 80px;
+font-size: 1.2rem;
+}
+
+.skill-box{
+padding:1rem;
+color:rgb(36, 40, 40);
+cursor:pointer;
+transition: transform 0.5 ease-in-out;
+/*box-shadow: 3px 3px 5px chartreuse, -3px -3px 5px chartreuse;*/
+
+}
+.skill-title{
+display: flex;
+flex-direction:column ;
+align-items:center;
+padding:0.5rem;
+margin-bottom: 0.5rem;
+transition: transform 0.5s ease-in-out;
+
+}
+.skill-title:after{
+content: '';
+position: absolute;
+bottom: 0;
+right:50%;
+width: 35px;
+height: 4px;
+border-radius: 2px 0 0 2px;
+transition: .5s ;
+
+}
+.skill-title::before{
+content: '';
+position: absolute;
+bottom: 0;
+right:50%;
+width: 35px;
+height: 4px;
+border-radius: 2px 0 0 2px;
+transition: .5s ;
+
+}
+/*.skill-box:hover > .skill-title::after,.skill-box:hover > .skill-title::before{
+width: 35px;
+}*/
+.skill-box :hover{
+color: aquamarine;
+transform: scale(1.2);
+}
+
+
+.img{
+width:90px;
+height:90px;
+position: relative;
+border-radius:45px ;
+background-color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0;
+margin: 0;
+/*box-shadow: 3px 3px 5px rgb(8, 156, 107), -3px -3px 5px rgb(67, 194, 152);*/
+}
+.img::after{
+content:'';
+position: absolute;
+top:0;
+left:0;
+width:50%;
+background: rgba(100,100,100,0.5);
+border-radius: 45px 0 0 45px;
+}
+.skill-icon{
+width:50px;
+z-index: 2;
+}
+.skill-title h3{
+color:#fff;
+
+margin:0.5rem;
+
+}
+.header {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    animation: mymove3 0.8s;
+    animation-fill-mode: forwards;
+    animation-delay: 2ms;
+}
+
+@keyframes mymove3 {
+    0% { left: -100%; }
+    100% { left: 55%; transform: translateX(-50%); }
+}
+
+
+.header:hover{
+color:goldenrod;
+transform:scale(1.2);
+}
+.img:hover{
+box-shadow: 3px 3px 5px rgb(8, 156, 107), -3px -3px 5px rgb(67, 194, 152);
+}
+
+
+.bar{
+background:#353b48;
+display: block;
+height:10px;
+border: 2px solid rgba(0, 0, 0, 0.3);
+border-radius: 10px;
+box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(30, 212, 85, 0.22);
+transition:all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 1px 2px rgba(9, 235, 231, 0.22);
+}
+.bar span{
+height:10px;
+float:left;
+background: linear-gradient(135deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+}
+.html{
+width:90%;
+animation: html 3s;
+}
+.css{
+width:90%;
+animation: html 3s;
+}
+.Javascript{
+    width:50%;
+animation: html 3s;   
+}
+.SQL{
+    width:90%;
+animation: html 3s; 
+}
+.c{
+
+  width:100%;
+animation: html 3s; 
+}
+.Java{
+    width:40%;
+animation: html 3s;  
+}
+
+.PYTHON{
+    width:50%;
+animation: html 3s; 
+}
+.DSA{
+    width:70%;
+animation: html 3s; 
+}
+.PHP{
+    width:20%;
+animation: html 3s; 
+}
+body{
+background-color:black
+}
+video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        z-index: -1; /* Place the video behind other elements */
+    }
+</style>
+<body>
+   <!-- <video  autoplay src="assets/vecteezy_shiny-particle-animation-on-a-black-background_29796946.mp4" ></video>-->
+   <video autoplay loop muted src="assets/vecteezy_shiny-particle-animation-on-a-black-background_29796946.mp4"></video>
+    <section id="secondpage">
+   
+    <div class="inner">
+        <div class="header">
+            <center>
+      <h1>Skills</h1> 
+      </center>
+        </div>
+        </div>
+<div class="container">
+<div class="skill-box">
+    <div class="skill-title">
+        <div class="img">
+        <img src="assets/html5-logo-png-transparent-5.png" alt="" class="skill-icon"> 
+        </div>
+        <h3>HTML 5</h3>
+
+    </div>
+    <span class="bar">
+      <span class="html">
+
+      </span>  
+    </span>
+   
+
+    
+
+</div>
+<div class="skill-box">
+    <div class="skill-title">
+        <div class="img">
+        <img src="assets/css.jpeg" alt=""class="skill-icon"> 
+        </div>
+        <h3>CSS 5</h3>
+
+    </div>
+    <span class="bar">
+        <span class="css">
+  
+        </span>  
+      </span> 
+
+
+</div>
+<div class="skill-box">
+    <div class="skill-title">
+        <div class="img">
+        <img src="assets/JavaScript.jpeg" alt="" class="skill-icon"> 
+        </div>
+        <h3>Javascript</h3>
+
+    </div>
+    <span class="bar">
+        <span class="Javascript">
+  
+        </span>  
+      </span>
+
+
+</div>
+
+<div class="skill-box">
+    <div class="skill-title">
+        <div class="img">
+        <img src="assets/sql.jpeg" alt="" class="skill-icon"> 
+        </div>
+        <h3>SQL</h3>
+
+    </div>
+    <span class="bar">
+        <span class="SQL">
+  
+        </span>  
+      </span>
+    
+</div>
+<div class="skill-box">
+    <div class="skill-title">
+        <div class="img">
+        <img src="assets/c++.jpeg" alt="" class="skill-icon"> 
+        </div>
+        <h3>C++</h3>
+
+    </div>
+    <span class="bar">
+        <span class="c">
+  
+        </span>  
+      </span>
+
+</div>
+<div class="skill-box">
+    <div class="skill-title" class="skill-icon">
+        <div class="img">
+        <img src="java.jpeg" alt="" class="skill-icon"> 
+        </div>
+        <h3>JAVA</h3>
+
+    </div>
+    <span class="bar">
+        <span class="Java">
+  
+        </span>  
+      </span>
+    </div>
+    <div class="skill-box">
+        <div class="skill-title">
+            <div class="img">
+            <img src="assets/python.jpeg" alt="" class="skill-icon"> 
+            </div>
+            <h3>PYTHON</h3>
+    
+        </div>
+        <span class="bar">
+            <span class="PYTHON">
+      
+            </span>  
+          </span>
+    
+        </div>
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="img">
+                <img src="assets/dsa.jpeg" alt="" class="skill-icon"> 
+                </div>
+                <h3>DSA</h3>
+        
+            </div>
+            <span class="bar">
+                <span class="DSA">
+          
+                </span>  
+              </span>
+        
+        </div>
+  
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="img">
+                <img src="assets/php.jpeg" alt="" class="skill-icon"> 
+                </div>
+                <h3>PHP</h3>
+        
+            </div>
+            
+            <span class="bar">
+                <span class="PHP">
+          
+                </span>  
+              </span>
+        
+        </div>
+  
+
+
+</div>
+    </section>
+   
+   
+</body>
+</html>
